@@ -1,2 +1,8 @@
 UCI HAR Dataset
 getdata-projectfiles-UCI HAR Dataset.zip
+README.txt
+activity_labels.txt
+features.txt
+features_info.txt
+test/
+train/
