@@ -10,7 +10,8 @@ For Run_analysis script to work the UCI zip file must be expanded and the R scri
 placed where the data is (inside "UCI HAR Dataset" directory)
 
 After that for running the script in R or RStudio set the working directory where The R file is
-and just source it(source("run_analysis.R").
+and just source it: 
+	source("run_analysis.R")
 
 This will run the script and generate a file tidyData.txt as result. (this process can take some time as original data files are big)
 

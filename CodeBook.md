@@ -38,7 +38,7 @@ For detailed information about original features check features.txt and features
    		^f -(starts with f) -> Frequency
 
 ### Step 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
-    calculates the average of each variable by using aggregate function an agregating by subject y activity
+    calculates the average of each variable by using aggregate function an agregating by subject and activity
 	saves data as tidyData.txt using write.table
 
 
