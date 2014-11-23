@@ -15,7 +15,7 @@ and just source it:
 
 This will run the script and generate a file tidyData.txt as result. (this process can take some time as original data files are big)
 
-The script has been documented and do the 5 steps required in the asignment 
+The script has been documented and does the 5 steps required in the asignment 
 
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
