@@ -24,4 +24,4 @@ The script has been documented and do the 5 steps required in the asignment
 
 the script does not require any external libraries
 
-check the Codebook.md for information about data and transformations
+check the CodeBook.md for information about data and transformations
