@@ -206,8 +206,22 @@ For detailed information about original features check features.txt and features
     mean value of fBodyBodyGyroJerkMag-std() grouped by subject and activity description of original value in the original document
 ### FrequencyBodyBodyAngularVelocityJerkMagnitudeMeanFreq()
     mean value of fBodyBodyGyroJerkMag-meanFreq() grouped by subject and activity description of original value in the original document
+### angle(TimeBodyAccelerationMean,gravity)
+    mean value of angle(tBodyAccMean,gravity) grouped by subject and activity description of original value in the original document
+### angle(TimeBodyAccelerationJerkMean),gravityMean)
+    mean value of angle(tBodyAccJerkMean),gravityMean) grouped by subject and activity description of original value in the original document
+### angle(TimeBodyAngularVelocityMean,gravityMean)
+    mean value of angle(tBodyGyroMean,gravityMean) grouped by subject and activity description of original value in the original document
+### angle(TimeBodyAngularVelocityJerkMean,gravityMean)
+    mean value of angle(tBodyGyroJerkMean,gravityMean) grouped by subject and activity description of original value in the original document
+### angle(X,gravityMean)
+    mean value of angle(X,gravityMean) grouped by subject and activity description of original value in the original document
+### angle(Y,gravityMean)
+    mean value of angle(Y,gravityMean) grouped by subject and activity description of original value in the original document
+### angle(Z,gravityMean)
+    mean value of angle(Z,gravityMean) grouped by subject and activity description of original value in the original document
 
-## 	for knowing what original value is please refer to features_info.txt 
-### Only mean and std columns where selected for original data and subject and activity where added 
-    All types and meaning of the valus can be check in features_info
+##Notes:
+Only mean and std columns where selected for original data and subject and activity where added 
+All types and meaning of the values can be check in features_info.txt
 	

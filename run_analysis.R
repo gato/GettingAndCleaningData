@@ -25,7 +25,7 @@ colnames(X) <- features[,2]
 
 # 2 Extracts only the measurements on the mean and standard deviation 
 #   for each measurement. 
-filtered_X <- X[grepl("^.+(mean|std).*", features$V2)]
+filtered_X <- X[grepl("^.+([m|M]ean|std).*", features$V2)]
 
 # 3 Uses descriptive activity names to name the activities in the data set
 descriptive_activities <- sapply(y[,1], function(x) {as.character(activity_labels[x,2])})
@@ -51,6 +51,7 @@ for (i in 1:length(cols))
   cols[i] = gsub("Gyro","AngularVelocity",cols[i], ignore.case = TRUE)
   cols[i] = gsub("-mean","Mean",cols[i],ignore.case = TRUE)
   cols[i] = gsub("^t","Time",cols[i],ignore.case = TRUE)
+  cols[i] = gsub("angle.t","angle(Time",cols[i],ignore.case = TRUE)
   cols[i] = gsub("^f","Frequency",cols[i],ignore.case = TRUE)
 };
 colnames(filtered_X) <- cols
@@ -62,7 +63,7 @@ colnames(filtered_X) <- cols
 filtered_X["subject"] <- subject[,1]
 
 # 5.2 agregate data by subject and activity
-tidy_data <- aggregate(filtered_X[1:79], by=list(subject=filtered_X$subject,activity=filtered_X$activity), FUN = mean)
+tidy_data <- aggregate(filtered_X[1:86], by=list(subject=filtered_X$subject,activity=filtered_X$activity), FUN = mean)
 
 # Export the tidyData set 
 write.table(tidy_data, './tidyData.txt',row.names = FALSE);
